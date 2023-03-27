@@ -36,58 +36,17 @@
                 <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
                 <p class="listaDePresenca__presenca">5</p>
             </li>
+            {% if lista %}
+            {% for embaixadores in lista %}
             <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
+                <p class="listaDePresenca__garoto">{{ embaixadores.nome }}</p>
+                <p class="listaDePresenca__presenca">{{ embaixadores.presenca }}</p>
             </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
-            <li class="listaDePresenca__item">
-                <p class="listaDePresenca__garoto">Lucas Alfeu da Silva Oliveira</p>
-                <p class="listaDePresenca__presenca">5</p>
-            </li>
+            {% endfor %}
+            {% else %}
+            <p>Lista vazia</p>
+
+            {% endif %}
         </ul>
     </main>
     <footer class="footer">
