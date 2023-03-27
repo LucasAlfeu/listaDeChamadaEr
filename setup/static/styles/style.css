@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+}
+.cabecalho{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #29166f;
+    padding: 1rem;
+    gap: 1rem;
+}
+.cabecalho__escudo {
+    width: 100px;
+    height: 120px;
+
+}
+.cabecalho__titulo{
+    color: #fff;
+}
+.principal{
+    text-align: center;
+    margin-top: 3rem;
+}
+.chamada{
+    font-size: 3rem;
+}
+.numeroDeReunioes{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1.5rem 15%;
+    font-weight: bold;
+}
+.lista{
+    font-size: 1.5rem;
+}
+.listaDePresenca{
+    margin: 1rem 15%;
+    list-style: none;
+}
+.listaDePresenca__item{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 0;
+}
+.listaDePresenca__nome, .listaDePresenca__numeroPresenca{
+    font-weight: bold;
+}
+.footer{
+    background: #29166f;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    height: 80px;
+    align-items: center;
+}
+.footer__text{
+    color: #fff;
+    font-size: 1.25rem;
+}
