@@ -1,0 +1,15 @@
+{
+    "version": 2,
+    "builds": [
+        {
+            "scr": "./manage.py",
+            "use": "@vercel/python"
+        }
+    ],
+    "routes": [
+        {
+            "scr": "/(.*)",
+            "dest": "/"
+        }
+    ]
+}
